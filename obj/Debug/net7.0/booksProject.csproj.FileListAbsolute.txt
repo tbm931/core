@@ -1,0 +1,8 @@
+E:\טלי\שעורים\core\booksProject\obj\Debug\net7.0\booksProject.csproj.AssemblyReference.cache
+E:\טלי\שעורים\core\booksProject\obj\Debug\net7.0\booksProject.GeneratedMSBuildEditorConfig.editorconfig
+E:\טלי\שעורים\core\booksProject\obj\Debug\net7.0\booksProject.AssemblyInfoInputs.cache
+E:\טלי\שעורים\core\booksProject\obj\Debug\net7.0\booksProject.AssemblyInfo.cs
+E:\טלי\שעורים\core\booksProject\obj\Debug\net7.0\booksProject.csproj.CoreCompileInputs.cache
+E:\טלי\שעורים\core\booksProject\obj\Debug\net7.0\booksProject.MvcApplicationPartsAssemblyInfo.cs
+E:\טלי\שעורים\core\booksProject\obj\Debug\net7.0\booksProject.MvcApplicationPartsAssemblyInfo.cache
+E:\טלי\שעורים\core\booksProject\obj\Debug\net7.0\booksProject.sourcelink.json
