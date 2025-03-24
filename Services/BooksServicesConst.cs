@@ -83,4 +83,9 @@ public static class BooksUtilities
     {
         services.AddSingleton<IBookService, BookServiceConst>();
     }
+
+    public static void AddBooksJson(this IServiceCollection services)
+    {
+        services.AddSingleton<IBookService, JsonService>();
+    }
 }

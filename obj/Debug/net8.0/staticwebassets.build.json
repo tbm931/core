@@ -1,12 +1,331 @@
 {
   "Version": 1,
-  "Hash": "eZaT+y62ja8tYbEc65pR/ahsCxeKnOB8yrxB1sr8aSA=",
+  "Hash": "UmwaN9XIbuHtdJkBfJbnZSa5KO1sFG/b7XplhTWNzTc=",
   "Source": "booksProject",
   "BasePath": "_content/booksProject",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "booksProject\\wwwroot",
+      "Source": "booksProject",
+      "ContentRoot": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\",
+      "BasePath": "_content/booksProject",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\css\\site.css",
+      "SourceId": "booksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\",
+      "BasePath": "_content/booksProject",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cq2zsc3ays",
+      "Integrity": "bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\index.html",
+      "SourceId": "booksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\",
+      "BasePath": "_content/booksProject",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vem90e4wg8",
+      "Integrity": "txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site.js",
+      "SourceId": "booksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\",
+      "BasePath": "_content/booksProject",
+      "RelativePath": "js/site#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wxxg9ssvv9",
+      "Integrity": "LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/site.cq2zsc3ays.css",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 19:45:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cq2zsc3ays"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 19:45:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 19:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E="
+        }
+      ]
+    },
+    {
+      "Route": "index.vem90e4wg8.html",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 19:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vem90e4wg8"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3712"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 19:35:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.wxxg9ssvv9.js",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3712"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 19:35:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wxxg9ssvv9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ="
+        }
+      ]
+    }
+  ]
 }

@@ -22,7 +22,7 @@ public class ErrorMiddleware
         catch (Exception e)
         {
             c.Response.StatusCode = 500;
-            await c.Response.WriteAsync("פנה לתמיכה הטכנית");
+            await c.Response.WriteAsync("פנה לתמיכה הטכנית" + e);
         }
     }
 }

@@ -67,3 +67,11 @@ C:\Users\user1\Documents\GitHub\core\obj\Debug\net8.0\ref\booksProject.dll
 C:\Users\user1\Documents\GitHub\core\bin\Debug\net8.0\booksProject.staticwebassets.endpoints.json
 C:\Users\user1\Documents\GitHub\core\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\user1\Documents\GitHub\core\obj\Debug\net8.0\staticwebassets\msbuild.booksProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\user1\Documents\GitHub\core\bin\Debug\net8.0\booksProject.staticwebassets.runtime.json
+C:\Users\user1\Documents\GitHub\core\bin\Debug\net8.0\Data\Books.json
+C:\Users\user1\Documents\GitHub\core\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\user1\Documents\GitHub\core\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\user1\Documents\GitHub\core\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\user1\Documents\GitHub\core\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\user1\Documents\GitHub\core\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\user1\Documents\GitHub\core\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
