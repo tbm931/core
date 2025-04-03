@@ -4,12 +4,12 @@ using System.Text.Json;
 
 namespace booksProject.Services
 {
-    public class JsonService : IBookService
+    public class BookJsonService : IBookService
     {
         public List<Book> books { get; }
         private static string fileName = "Books.json";
         private string filePath;
-        public JsonService(IHostEnvironment env)
+        public BookJsonService(IHostEnvironment env)
         {
             filePath = Path.Combine(env.ContentRootPath, "Data", fileName);
 
@@ -27,7 +27,12 @@ namespace booksProject.Services
         {
             File.WriteAllText(filePath, JsonSerializer.Serialize(books));
         }
-        public List<Book> Get() => books;
+        public List<Book> Get()
+        {
+            System.Console.WriteLine(13);
+            System.Console.WriteLine(books.Count());
+            return books;
+        }
 
         public Book Get(int id) => books.FirstOrDefault(b => b.Id == id)!;
 
@@ -36,7 +41,7 @@ namespace booksProject.Services
             if (newBook == null
             || string.IsNullOrWhiteSpace(newBook.Name))
                 return -1;
-            newBook.Id = books.Count() + 1;
+            newBook.Id = books.Max(au => au.Id) + 1;
             books.Add(newBook);
             saveToFile();
             return newBook.Id;
@@ -67,7 +72,6 @@ namespace booksProject.Services
                 return false;
 
             Book.Name = newBook.Name;
-            Book.AuthorName = newBook.AuthorName;
             saveToFile();
 
             return true;

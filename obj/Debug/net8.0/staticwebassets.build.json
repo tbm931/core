@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UmwaN9XIbuHtdJkBfJbnZSa5KO1sFG/b7XplhTWNzTc=",
+  "Hash": "ImTz1PPqW28HOIIces2MrbK2gNtp9SsolXx/ew+5aYw=",
   "Source": "booksProject",
   "BasePath": "_content/booksProject",
   "Mode": "Default",
@@ -17,6 +17,27 @@
   ],
   "Assets": [
     {
+      "Identity": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\authorList.html",
+      "SourceId": "booksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\",
+      "BasePath": "_content/booksProject",
+      "RelativePath": "authorList#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ffhw1jcj3j",
+      "Integrity": "xZJyVHmC48jVjXDd61DvXShTkZP3xZSdGbRqrwy9RW8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\authorList.html"
+    },
+    {
       "Identity": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\css\\site.css",
       "SourceId": "booksProject",
       "SourceType": "Discovered",
@@ -31,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cq2zsc3ays",
-      "Integrity": "bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0=",
+      "Fingerprint": "6byeo62kyh",
+      "Integrity": "MrViJy6+V64OoriDwEgenZS+EKbIZddgrXdVFksu46I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -52,11 +73,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vem90e4wg8",
-      "Integrity": "txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E=",
+      "Fingerprint": "0m6ur8ribd",
+      "Integrity": "+McU7bYokNJtyBg/DmBjB8Mv2NptXl/Yvcwj/j1+7G8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\check.js",
+      "SourceId": "booksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\",
+      "BasePath": "_content/booksProject",
+      "RelativePath": "js/check#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zugoqvhoc4",
+      "Integrity": "W7GnH8bf01Yz25JU5Xu3WASPLMDsVuWQmjAedejNQzY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\check.js"
     },
     {
       "Identity": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site.js",
@@ -73,17 +115,59 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wxxg9ssvv9",
-      "Integrity": "LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ=",
+      "Fingerprint": "fifw4y4sjz",
+      "Integrity": "h6IRxk2pBQlQpnQJw6Mf7ul6kX5wssgZ5TcYAdbWkeo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site2.js",
+      "SourceId": "booksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\",
+      "BasePath": "_content/booksProject",
+      "RelativePath": "js/site2#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c3c023olrt",
+      "Integrity": "yNQIz4K2M36UDG5TcBsEjSe94x7vGGZBJmYEVvNNu4w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site2.js"
+    },
+    {
+      "Identity": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\second.html",
+      "SourceId": "booksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\",
+      "BasePath": "_content/booksProject",
+      "RelativePath": "second#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "agfml14n0m",
+      "Integrity": "utAQZc0zneNHC8angTj5hpdFKV8gV+npnPDM0wiyi9k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\second.html"
     }
   ],
   "Endpoints": [
     {
-      "Route": "css/site.cq2zsc3ays.css",
-      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\css\\site.css",
+      "Route": "authorList.ffhw1jcj3j.html",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\authorList.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -92,19 +176,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "533"
+          "Value": "1625"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/css"
+          "Value": "text/html"
         },
         {
           "Name": "ETag",
-          "Value": "\"bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0=\""
+          "Value": "\"xZJyVHmC48jVjXDd61DvXShTkZP3xZSdGbRqrwy9RW8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:45:41 GMT"
+          "Value": "Thu, 03 Apr 2025 06:43:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -114,7 +198,89 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cq2zsc3ays"
+          "Value": "ffhw1jcj3j"
+        },
+        {
+          "Name": "label",
+          "Value": "authorList.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xZJyVHmC48jVjXDd61DvXShTkZP3xZSdGbRqrwy9RW8="
+        }
+      ]
+    },
+    {
+      "Route": "authorList.html",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\authorList.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1625"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xZJyVHmC48jVjXDd61DvXShTkZP3xZSdGbRqrwy9RW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 06:43:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xZJyVHmC48jVjXDd61DvXShTkZP3xZSdGbRqrwy9RW8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.6byeo62kyh.css",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "683"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MrViJy6+V64OoriDwEgenZS+EKbIZddgrXdVFksu46I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 06:44:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6byeo62kyh"
         },
         {
           "Name": "label",
@@ -122,7 +288,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0="
+          "Value": "sha256-MrViJy6+V64OoriDwEgenZS+EKbIZddgrXdVFksu46I="
         }
       ]
     },
@@ -137,7 +303,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "533"
+          "Value": "683"
         },
         {
           "Name": "Content-Type",
@@ -145,11 +311,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0=\""
+          "Value": "\"MrViJy6+V64OoriDwEgenZS+EKbIZddgrXdVFksu46I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:45:41 GMT"
+          "Value": "Thu, 03 Apr 2025 06:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -159,7 +325,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bAs8tTSyCH3KEHwv6M6YYL21vyed4HT3aCqBWGZ2on0="
+          "Value": "sha256-MrViJy6+V64OoriDwEgenZS+EKbIZddgrXdVFksu46I="
+        }
+      ]
+    },
+    {
+      "Route": "index.0m6ur8ribd.html",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+McU7bYokNJtyBg/DmBjB8Mv2NptXl/Yvcwj/j1+7G8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 06:44:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0m6ur8ribd"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+McU7bYokNJtyBg/DmBjB8Mv2NptXl/Yvcwj/j1+7G8="
         }
       ]
     },
@@ -174,7 +385,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1306"
+          "Value": "600"
         },
         {
           "Name": "Content-Type",
@@ -182,11 +393,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E=\""
+          "Value": "\"+McU7bYokNJtyBg/DmBjB8Mv2NptXl/Yvcwj/j1+7G8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:38:10 GMT"
+          "Value": "Thu, 03 Apr 2025 06:44:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -196,13 +407,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E="
+          "Value": "sha256-+McU7bYokNJtyBg/DmBjB8Mv2NptXl/Yvcwj/j1+7G8="
         }
       ]
     },
     {
-      "Route": "index.vem90e4wg8.html",
-      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\index.html",
+      "Route": "js/check.js",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\check.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -211,19 +422,56 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1306"
+          "Value": "2017"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/html"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E=\""
+          "Value": "\"W7GnH8bf01Yz25JU5Xu3WASPLMDsVuWQmjAedejNQzY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:38:10 GMT"
+          "Value": "Mon, 31 Mar 2025 19:06:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W7GnH8bf01Yz25JU5Xu3WASPLMDsVuWQmjAedejNQzY="
+        }
+      ]
+    },
+    {
+      "Route": "js/check.zugoqvhoc4.js",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\check.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2017"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W7GnH8bf01Yz25JU5Xu3WASPLMDsVuWQmjAedejNQzY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 19:06:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -233,15 +481,60 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vem90e4wg8"
+          "Value": "zugoqvhoc4"
         },
         {
           "Name": "label",
-          "Value": "index.html"
+          "Value": "js/check.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-txGwe/dJF0sdrsKidmvpql3k9vw4exvxdOL9wuQdX3E="
+          "Value": "sha256-W7GnH8bf01Yz25JU5Xu3WASPLMDsVuWQmjAedejNQzY="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.fifw4y4sjz.js",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h6IRxk2pBQlQpnQJw6Mf7ul6kX5wssgZ5TcYAdbWkeo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 06:36:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fifw4y4sjz"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h6IRxk2pBQlQpnQJw6Mf7ul6kX5wssgZ5TcYAdbWkeo="
         }
       ]
     },
@@ -256,7 +549,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3712"
+          "Value": "6202"
         },
         {
           "Name": "Content-Type",
@@ -264,11 +557,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ=\""
+          "Value": "\"h6IRxk2pBQlQpnQJw6Mf7ul6kX5wssgZ5TcYAdbWkeo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:35:38 GMT"
+          "Value": "Thu, 03 Apr 2025 06:36:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -278,13 +571,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ="
+          "Value": "sha256-h6IRxk2pBQlQpnQJw6Mf7ul6kX5wssgZ5TcYAdbWkeo="
         }
       ]
     },
     {
-      "Route": "js/site.wxxg9ssvv9.js",
-      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site.js",
+      "Route": "js/site2.c3c023olrt.js",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site2.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -293,7 +586,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3712"
+          "Value": "6528"
         },
         {
           "Name": "Content-Type",
@@ -301,11 +594,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ=\""
+          "Value": "\"yNQIz4K2M36UDG5TcBsEjSe94x7vGGZBJmYEVvNNu4w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:35:38 GMT"
+          "Value": "Wed, 02 Apr 2025 15:21:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -315,15 +608,134 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wxxg9ssvv9"
+          "Value": "c3c023olrt"
         },
         {
           "Name": "label",
-          "Value": "js/site.js"
+          "Value": "js/site2.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LNfQFEHSRcXwnI5YWpsPVDekKFwbqCQ1Mrrnrk5xjpQ="
+          "Value": "sha256-yNQIz4K2M36UDG5TcBsEjSe94x7vGGZBJmYEVvNNu4w="
+        }
+      ]
+    },
+    {
+      "Route": "js/site2.js",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site2.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yNQIz4K2M36UDG5TcBsEjSe94x7vGGZBJmYEVvNNu4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 15:21:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yNQIz4K2M36UDG5TcBsEjSe94x7vGGZBJmYEVvNNu4w="
+        }
+      ]
+    },
+    {
+      "Route": "second.agfml14n0m.html",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\second.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1815"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"utAQZc0zneNHC8angTj5hpdFKV8gV+npnPDM0wiyi9k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 06:44:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "agfml14n0m"
+        },
+        {
+          "Name": "label",
+          "Value": "second.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-utAQZc0zneNHC8angTj5hpdFKV8gV+npnPDM0wiyi9k="
+        }
+      ]
+    },
+    {
+      "Route": "second.html",
+      "AssetFile": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\second.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1815"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"utAQZc0zneNHC8angTj5hpdFKV8gV+npnPDM0wiyi9k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 06:44:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-utAQZc0zneNHC8angTj5hpdFKV8gV+npnPDM0wiyi9k="
         }
       ]
     }

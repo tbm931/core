@@ -1,0 +1,147 @@
+/Book.GET took 59ms.
+ User: יעל רועי UserType: סופר 
+ Success: True
+/Author/2.PUT took 64ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Book.GET took 24ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Author.GET took 8ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Author/2.PUT took 21ms.
+ User: מיה קינן UserType: מנהל 
+ Success: False
+/Author.GET took 4ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 18ms.
+ User: יעל רועי UserType: סופר 
+ Success: True
+/Author/2.PUT took 19ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Author/2.PUT took 60ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Book.GET took 84ms.
+ User: יעל רועי UserType: סופר 
+ Success: True
+/Author/2.PUT took 23ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Author/2.PUT took 69ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Book.GET took 47ms.
+ User: יעל רועי UserType: סופר 
+ Success: True
+/Author/2.PUT took 30ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Author/2.PUT took 20ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Book.GET took 12ms.
+ User: יעל רועי UserType: סופר 
+ Success: True
+/Author/2.PUT took 20ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Book.GET took 12ms.
+ User: יעל רועי UserType: סופר 
+ Success: True
+/Book.GET took 8ms.
+ User: יעל רועי UserType: סופר 
+ Success: True
+/Author/2.PUT took 5ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Book.GET took 6ms.
+ User: יעל רועי UserType: סופר 
+ Success: True
+/Author/2.PUT took 20ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Author/2.PUT took 21ms.
+ User: יעל רועי UserType: סופר 
+ Success: False
+/Book.GET took 12ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Author.GET took 9ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Author/2.PUT took 16ms.
+ User: מיה קינן UserType: מנהל 
+ Success: False
+/Author.GET took 2ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Author/2.PUT took 18ms.
+ User: מיה קינן UserType: מנהל 
+ Success: False
+/Author.GET took 1ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Author.GET took 3ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Author.GET took 1ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Author.GET took 2ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 6ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 8ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 6ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 14ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 17ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 11ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 8ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 9ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 10ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 18ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 10ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 75ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 13ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 10ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 9ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 72ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 13ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True

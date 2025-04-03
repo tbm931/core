@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Author CRUD</title>
+    <link rel="stylesheet" href="./css/site.css" />
+</head>
+
+<body dir="rtl">
+    <a href="./index.html" style="color: rgb(0, 140, 255);font-size: larger;text-decoration: none;">ליציאה</a>
+    <h1>Author CRUD</h1>
+    <h3>Add</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <input type="text" id="add-id" placeholder="new author id">
+        <input type="text" id="add-name" placeholder="new author name">
+        <input type="text" id="add-phone" placeholder="new author phone">
+        <label for="">Is Admin?</label>
+        <input type="checkbox" id="add-isAdmin">
+        <input type="submit" value="Add">
+    </form>
+
+    <div id="editForm">
+        <h3>Edit</h3>
+        <form action="javascript:void(0);" onsubmit="updateItem()">
+            <input id="edit-id" type="text" hidden>
+            <input id="edit-name" type="text" readonly>
+            <input id="edit-phone" type="text">
+            <input id="edit-isAdmin" type="checkbox">
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">X</a>
+        </form>
+    </div>
+
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th hidden></th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>IsAdmin</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="authors"></tbody>
+    </table>
+
+    <script src="js/site2.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getItems();
+    </script>
+</body>
+
+</html>

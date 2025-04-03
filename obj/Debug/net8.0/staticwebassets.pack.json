@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\authorList.html",
+      "PackagePath": "staticwebassets\\authorList.html"
+    },
+    {
       "Id": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -9,8 +13,20 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\check.js",
+      "PackagePath": "staticwebassets\\js\\check.js"
+    },
+    {
       "Id": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\js\\site2.js",
+      "PackagePath": "staticwebassets\\js\\site2.js"
+    },
+    {
+      "Id": "C:\\Users\\user1\\Documents\\GitHub\\core\\wwwroot\\second.html",
+      "PackagePath": "staticwebassets\\second.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.booksProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

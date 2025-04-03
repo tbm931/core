@@ -1,6 +1,5 @@
 using System.Diagnostics;
-using System.Net;
-using System.Net.Mail;
+using booksProject.Services;
 
 namespace booksProject.Middlewares;
 public class WriteToLogMiddleware
@@ -12,29 +11,18 @@ public class WriteToLogMiddleware
     }
     public async Task Invoke(HttpContext c)
     {
-        var sw = new Stopwatch();
-        sw.Start();
-        await ne(c);
-        string s = $"{c.Request.Path}.{c.Request.Method} took {sw.ElapsedMilliseconds}ms."
-            + $" Success: {c.Response.StatusCode == 200}";
-        try
+        var token = c.Request.Headers["Authorization"].ToString();
+        if (token == "")
+            await ne(c);
+        else
         {
-            MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("המייל ממנו שולחים");
-            mail.To.Add("המייל אליו שולחים");
-            mail.Subject = "try";
-            mail.Body = s;
-
-            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-            smtp.Credentials = new NetworkCredential("המייל ממנו שולחים", "סיסמת האפליקציה של המייל ממנו שולחים");
-            smtp.EnableSsl = true;
-
-            smtp.Send(mail);
-            Console.WriteLine("המייל נשלח בהצלחה!");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"שגיאה: {ex.Message}");
+            var author = AuthorTokenService.GetAuthorFromToken(token);
+            var sw = new Stopwatch();
+            sw.Start();
+            await ne(c);
+            string s = $"{c.Request.Path}.{c.Request.Method} took {sw.ElapsedMilliseconds}ms.\n User: {author.Name} UserType: {(author.IsAdmin ? "מנהל" : "סופר")} \n Success: {c.Response.StatusCode == 200}";
+            using (StreamWriter stw = new StreamWriter(@"C:\Users\user1\Documents\GitHub\core\Data\Log.txt", true))
+                stw.WriteLine(s);
         }
     }
 }

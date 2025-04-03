@@ -35,3 +35,10 @@ body {
     margin-top: 10%;
     color: rgb(0, 140, 255);
 }
+
+a {
+    text-align: center;
+    text-decoration-line: none;
+    /* text-decoration-color: rgb(0, 140, 255); */
+    color: rgb(0, 140, 255);
+}
