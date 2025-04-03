@@ -56,10 +56,6 @@ public static class BookServiceStatic
 
         Book.Name = newBook.Name;
         Book.AuthorName = newBook.AuthorName;
-        
-        /*var index = list.IndexOf(Book);
-        list[index] = newBook;*/
-
         return true;
     }
 

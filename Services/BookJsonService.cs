@@ -29,8 +29,6 @@ namespace booksProject.Services
         }
         public List<Book> Get()
         {
-            System.Console.WriteLine(13);
-            System.Console.WriteLine(books.Count());
             return books;
         }
 

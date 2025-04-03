@@ -22,20 +22,15 @@ public class AuthorController : ControllerBase
     [Route("[action]")]
     public ActionResult<String> Login([FromBody] LoginRequest loginRequest)
     {
-        System.Console.WriteLine(1);
         Author? author = AuthorTokenService.GetAuthors().FirstOrDefault(au => au.Id == loginRequest.Id && au.Name == loginRequest.Name);
         if (author == null)
         {
-            System.Console.WriteLine(2);
-
             return Forbid();
         }
         var _claims = new List<Claim>();
 
         if (author.IsAdmin)
         {
-            System.Console.WriteLine(3);
-
             _claims = new List<Claim>
             {
                 new Claim("type", "Admin"),
@@ -44,8 +39,6 @@ public class AuthorController : ControllerBase
         }
         else
         {
-            System.Console.WriteLine(4);
-
             _claims = new List<Claim>
             {
                 new Claim("type", "Author"),
@@ -54,8 +47,6 @@ public class AuthorController : ControllerBase
         }
 
         var token = AuthorTokenService.GetToken(_claims);
-        System.Console.WriteLine(5);
-        System.Console.WriteLine(token);
         return new OkObjectResult(AuthorTokenService.WriteToken(token));
     }
 
@@ -110,10 +101,8 @@ public class AuthorController : ControllerBase
     {
         string token = Request.Headers["Authorization"].ToString();
         Author author = AuthorTokenService.GetAuthorFromToken(token);
-        System.Console.WriteLine("id " + id + author.Name + author.Id);
         if (author.IsAdmin || author.Id == id)
         {
-            System.Console.WriteLine("here");
             if (authorService.Update(id, newAuthor))
             {
                 return NoContent();
@@ -121,11 +110,6 @@ public class AuthorController : ControllerBase
             throw new ApplicationException("not found");
         }
         return Forbid();
-        // return BadRequest();
-
-        /*var Book = list.FirstOrDefault(p => p.Id == id);
-        if (Book == null)
-            return NotFound();*/
     }
 
     [Authorize(Policy = "Admin")]
@@ -134,14 +118,11 @@ public class AuthorController : ControllerBase
     {
         if (authorService.Delete(id))
             return Ok();
-        throw new ApplicationException("not found");
-        // return NotFound();
-    }
+        throw new ApplicationException("not found");    }
 
     [HttpPost("GetAuthorFromT")]
     public Author? GetAuthorFromT([FromBody] AuthorRequest authorRequest)
     {
-        System.Console.WriteLine(authorRequest.ifDo + "  " + authorRequest.token);
         if (authorRequest.ifDo)
             return AuthorTokenService.GetAuthorFromToken(authorRequest.token);
         return null;

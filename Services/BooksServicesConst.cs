@@ -57,10 +57,6 @@ public class BookServiceConst : IBookService
 
         Book.Name = newBook.Name;
         Book.AuthorName = newBook.AuthorName;
-
-        /*var index = list.IndexOf(Book);
-        list[index] = newBook;*/
-
         return true;
     }
 

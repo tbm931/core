@@ -31,43 +31,32 @@ namespace booksProject.Services
                 ValidIssuer = issuer,
                 ValidAudience = issuer,
                 IssuerSigningKey = key,
-                ClockSkew = TimeSpan.Zero // remove delay of token when expire
+                ClockSkew = TimeSpan.Zero
             };
         public static string GetAuthorNameFromToken(string? token)
         {
             string id = decoder(token);
             var s = GetAuthors();
-
-            System.Console.WriteLine(15);
-            System.Console.WriteLine(s);
-            // return GetAuthors().First(author => author.Id == id).Name!;
             return s.First(author => author.Id == id).Name!;
         }
         public static Author GetAuthorFromToken(string? token)
         {
             string id = decoder(token);
-            System.Console.WriteLine(14);
-            System.Console.WriteLine(id);
             return GetAuthors().First(author => author.Id == id)!;
         }
 
         public static List<Author> GetAuthors()
         {
-            System.Console.WriteLine(6);
-
             HttpClient client = new HttpClient();
             var fakeHostEnvironment = new FakeHostEnvironment
             {
                 EnvironmentName = "Development"
             };
             AuthorJsonService authorJsonService = new AuthorJsonService(fakeHostEnvironment);
-            System.Console.WriteLine(7);
             return authorJsonService.Get();
         }
         private static string decoder(string? token)
         {
-            Console.WriteLine($"Received token: {token}");
-
             if (string.IsNullOrEmpty(token))
             {
                 Console.WriteLine("Token is null or empty");
@@ -90,13 +79,6 @@ namespace booksProject.Services
                 }
 
                 var jwtToken = handler.ReadJwtToken(token);
-                Console.WriteLine($"Decoded Token: {jwtToken}");
-
-                Console.WriteLine("Payload:");
-                foreach (var claim in jwtToken.Payload)
-                {
-                    Console.WriteLine($"{claim.Key}: {claim.Value}");
-                }
 
                 if (jwtToken.Payload.ContainsKey("id"))
                 {
@@ -121,7 +103,7 @@ namespace booksProject.Services
     public class FakeHostEnvironment : IHostEnvironment
     {
         public string ApplicationName { get; set; } = "MyTestApp";
-        public string EnvironmentName { get; set; } = Environments.Development; // או "Production"
+        public string EnvironmentName { get; set; } = Environments.Development;
         public string ContentRootPath { get; set; } = Directory.GetCurrentDirectory();
         public IFileProvider ContentRootFileProvider { get; set; } = new PhysicalFileProvider(Directory.GetCurrentDirectory());
     }

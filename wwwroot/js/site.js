@@ -153,11 +153,6 @@ function _displayItems(data) {
     const button = document.createElement('button');
 
     data.forEach(item => {
-        // let name = document.createElement('input');
-        // name.type = 'checkbox';
-        // name.disabled = true;
-        // name.value = item.isGlutenFree;
-
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
         editButton.setAttribute('onclick', `displayEditForm(${item.id})`);

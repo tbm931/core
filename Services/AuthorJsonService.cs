@@ -30,8 +30,6 @@ namespace booksProject.Services
 
         public List<Author> Get()
         {
-            System.Console.WriteLine(8);
-            System.Console.WriteLine(authors);
             return authors;
         }
 

@@ -17,25 +17,25 @@ public class WriteToLogMailMiddleware
         await ne(c);
         string s = $"{c.Request.Path}.{c.Request.Method} took {sw.ElapsedMilliseconds}ms."
             + $" Success: {c.Response.StatusCode == 200}";
-        // try
-        // {
-        //     MailMessage mail = new MailMessage();
-        //     mail.From = new MailAddress("המייל ממנו שולחים");
-        //     mail.To.Add("המייל אליו שולחים");
-        //     mail.Subject = "try";
-        //     mail.Body = s;
+        try
+        {
+            MailMessage mail = new MailMessage();
+            mail.From = new MailAddress("המייל ממנו שולחים");
+            mail.To.Add("המייל אליו שולחים");
+            mail.Subject = "try";
+            mail.Body = s;
 
-        //     SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-        //     smtp.Credentials = new NetworkCredential("המייל ממנו שולחים", "סיסמת האפליקציה של המייל ממנו שולחים");
-        //     smtp.EnableSsl = true;
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+            smtp.Credentials = new NetworkCredential("המייל ממנו שולחים", "סיסמת האפליקציה של המייל ממנו שולחים");
+            smtp.EnableSsl = true;
 
-        //     smtp.Send(mail);
-        //     Console.WriteLine("המייל נשלח בהצלחה!");
-        // }
-        // catch (Exception ex)
-        // {
-        //     Console.WriteLine($"שגיאה: {ex.Message}");
-        // }
+            smtp.Send(mail);
+            Console.WriteLine("המייל נשלח בהצלחה!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"שגיאה: {ex.Message}");
+        }
     }
 }
 

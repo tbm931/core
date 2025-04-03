@@ -20,15 +20,11 @@ public class BookController : ControllerBase
     }
 
     [Authorize(Policy = "Author")]
-    // [Authorize(Policy = "Admin")]
     [HttpGet]
     public ActionResult<IEnumerable<Book>> Get()
     {
-        System.Console.WriteLine("here");
         string token = Request.Headers["Authorization"].ToString();
-        System.Console.WriteLine(token);
         Author author = AuthorTokenService.GetAuthorFromToken(token);
-        System.Console.WriteLine(author);
         if (author.IsAdmin)
             return bookService.Get();
         return bookService.Get().Where(book => book.AuthorName == author.Name).ToList();
@@ -38,7 +34,6 @@ public class BookController : ControllerBase
     [HttpGet("{id}")]
     public ActionResult<Book> Get(int id)
     {
-        System.Console.WriteLine("here2");
         string token = Request.Headers["Authorization"].ToString();
         Author author = AuthorTokenService.GetAuthorFromToken(token);
         var Book = bookService.Get(id);
@@ -49,13 +44,7 @@ public class BookController : ControllerBase
     [HttpPost]
     public ActionResult Post(Book newBook)
     {
-        // string newBookId = authorService.Get().First(au => au.Name == newBook.AuthorName).Id!;
-        // newBook.AuthorName = newBookId;
         var newId = bookService.Insert(newBook);
-        // if (newId == -1)
-        // {
-        //     return BadRequest();        }
-
         return CreatedAtAction(nameof(Post), new { Id = newId });
     }
 
@@ -74,11 +63,6 @@ public class BookController : ControllerBase
             throw new ApplicationException("not found");
         }
         return Forbid();
-        // return BadRequest();
-
-        /*var Book = list.FirstOrDefault(p => p.Id == id);
-        if (Book == null)
-            return NotFound();*/
     }
 
     [Authorize(Policy = "Author")]
@@ -88,6 +72,5 @@ public class BookController : ControllerBase
         if (bookService.Delete(id))
             return Ok();
         throw new ApplicationException("not found");
-        // return NotFound();
     }
 }

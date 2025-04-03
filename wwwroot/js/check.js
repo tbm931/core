@@ -24,9 +24,8 @@ const checkAuthor = async () => {
             if (!res.ok) {
                 throw new Error(`HTTP error! Status: ${res.status}`);
             }
-            return response.json(); // התגובה היא JSON, ומכאן תוכל לגשת לטוקן
+            return response.json();
         }).then(res => {
-            // alert(res)
             return res;
         })
         localStorage.setItem("token", token);
@@ -48,7 +47,6 @@ const checkAuthor = async () => {
                 throw new Error(`HTTP error! Status: ${res.status}`);
             }
             return response.text();
-            // return response.json();
         })
         localStorage.setItem("author", author);
         alert("נכנסתם בהצלחה!!!");

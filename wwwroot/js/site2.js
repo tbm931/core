@@ -1,20 +1,8 @@
 const uri = '/Author';
 let authors = [];
 
-// window.onload = () => {
-//     document.getElementById('edit-name').innerText = JSON.parse(localStorage.getItem("author")).name;
-// }
-// document.addEventListener("DOMContentLoaded", function () {
 if (localStorage.getItem("token") === 'undefined' || localStorage.getItem("author") === 'undefined' || localStorage.getItem("author") === null)
     document.location.href = "index.html";
-// else {
-//     const author = JSON.parse(localStorage.getItem("author"));
-//     // document.getElementById('add-id').value = author.id || "";
-//     document.getElementById('add-name').value = author.name || "";
-//     document.getElementById('add-phone').value = author.phone || "";
-//     document.getElementById('add-isAdmin').checked = !!author.isAdmin;
-// }
-// });
 
 function getItems() {
     const token = localStorage.getItem("token");
