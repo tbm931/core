@@ -145,3 +145,9 @@
 /Book.GET took 13ms.
  User: מיה קינן UserType: מנהל 
  Success: True
+/Author.GET took 72ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True
+/Book.GET took 51ms.
+ User: מיה קינן UserType: מנהל 
+ Success: True

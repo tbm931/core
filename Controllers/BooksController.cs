@@ -32,7 +32,7 @@ public class BookController : ControllerBase
 
     [Authorize(Policy = "Author")]
     [HttpGet("{id}")]
-    public ActionResult<Book> Get(int id)
+    public ActionResult<Book> Get(string id)
     {
         string token = Request.Headers["Authorization"].ToString();
         Author author = AuthorTokenService.GetAuthorFromToken(token);
@@ -50,7 +50,7 @@ public class BookController : ControllerBase
 
     [Authorize(Policy = "Author")]
     [HttpPut("{id}")]
-    public ActionResult Put(int id, Book newBook)
+    public ActionResult Put(string id, Book newBook)
     {
         string token = Request.Headers["Authorization"].ToString();
         Author author = AuthorTokenService.GetAuthorFromToken(token);
@@ -67,7 +67,7 @@ public class BookController : ControllerBase
 
     [Authorize(Policy = "Author")]
     [HttpDelete("{id}")]
-    public ActionResult Delete(int id)
+    public ActionResult Delete(string id)
     {
         if (bookService.Delete(id))
             return Ok();

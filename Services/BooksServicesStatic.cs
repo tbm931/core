@@ -11,8 +11,8 @@ public static class BookServiceStatic
     {
         list = new List<Book>
         {
-            new Book { Id = 1, Name = "פרח בר", AuthorName = "רחל פומרנץ" },
-            new Book { Id = 2, Name = "איסתרק", AuthorName = "מיה קינן" },
+            new Book { Id = "1", Name = "פרח בר", AuthorName = "רחל פומרנץ" },
+            new Book { Id = "2", Name = "איסתרק", AuthorName = "מיה קינן" },
         };
     }
 
@@ -21,35 +21,35 @@ public static class BookServiceStatic
         return list;
     }
 
-    public static Book? Get(int id)
+    public static Book? Get(string id)
     {
         var Book = list.FirstOrDefault(b => b.Id == id);
         return Book;
     }
-    
-    public static int Insert(Book newBook)
-    {
-        if (newBook == null 
-            || string.IsNullOrWhiteSpace(newBook.Name))
-            return -1;
 
-        int maxId = list.Max(p => p.Id);
-        newBook.Id = maxId + 1;
+    public static string Insert(Book newBook)
+    {
+        if (newBook == null
+            || string.IsNullOrWhiteSpace(newBook.Name))
+            return "-1";
+
+        int maxId = list.Max(p => int.Parse(p.Id));
+        newBook.Id = (maxId + 1).ToString();
         list.Add(newBook);
 
         return newBook.Id;
     }
 
-     
-    public static bool Update(int id, Book newBook)
+
+    public static bool Update(string id, Book newBook)
     {
-        if (newBook == null 
+        if (newBook == null
             || string.IsNullOrWhiteSpace(newBook.Name)
             || newBook.Id != id)
         {
             return false;
         }
-        
+
         var Book = list.FirstOrDefault(p => p.Id == id);
         if (Book == null)
             return false;
@@ -59,7 +59,7 @@ public static class BookServiceStatic
         return true;
     }
 
-      public static bool Delete(int id)
+    public static bool Delete(string id)
     {
         var Book = list.FirstOrDefault(p => p.Id == id);
         if (Book == null)
@@ -69,6 +69,6 @@ public static class BookServiceStatic
         list.RemoveAt(index);
 
         return true;
-    }   
-   
+    }
+
 }

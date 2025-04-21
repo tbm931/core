@@ -12,8 +12,8 @@ public class BookServiceConst : IBookService
     {
         list = new List<Book>
         {
-            new Book { Id = 1, Name = "פרח בר", AuthorName = "רחל פומרנץ" },
-            new Book { Id = 2, Name = "איסתרק", AuthorName = "מיה קינן" },
+            new Book { Id = "1", Name = "פרח בר", AuthorName = "רחל פומרנץ" },
+            new Book { Id = "2", Name = "איסתרק", AuthorName = "מיה קינן" },
         };
     }
 
@@ -22,27 +22,27 @@ public class BookServiceConst : IBookService
         return list;
     }
 
-    public Book? Get(int id)
+    public Book? Get(string id)
     {
         var Book = list.FirstOrDefault(b => b.Id == id);
         return Book;
     }
 
-    public int Insert(Book newBook)
+    public string Insert(Book newBook)
     {
         if (newBook == null
             || string.IsNullOrWhiteSpace(newBook.Name))
-            return -1;
+            return "-1";
 
-        int maxId = list.Max(p => p.Id);
-        newBook.Id = maxId + 1;
+        int maxId = list.Max(p => int.Parse(p.Id));
+        newBook.Id = (maxId + 1).ToString();
         list.Add(newBook);
 
         return newBook.Id;
     }
 
 
-    public bool Update(int id, Book newBook)
+    public bool Update(string id, Book newBook)
     {
         if (newBook == null
             || string.IsNullOrWhiteSpace(newBook.Name)
@@ -60,7 +60,7 @@ public class BookServiceConst : IBookService
         return true;
     }
 
-    public bool Delete(int id)
+    public bool Delete(string id)
     {
         var Book = list.FirstOrDefault(p => p.Id == id);
         if (Book == null)

@@ -32,20 +32,20 @@ namespace booksProject.Services
             return books;
         }
 
-        public Book Get(int id) => books.FirstOrDefault(b => b.Id == id)!;
+        public Book Get(string id) => books.FirstOrDefault(b => b.Id == id)!;
 
-        public int Insert(Book newBook)
+        public string Insert(Book newBook)
         {
             if (newBook == null
             || string.IsNullOrWhiteSpace(newBook.Name))
-                return -1;
+                return "-1";
             newBook.Id = books.Max(au => au.Id) + 1;
             books.Add(newBook);
             saveToFile();
             return newBook.Id;
         }
 
-        public bool Delete(int id)
+        public bool Delete(string id)
         {
             var Book = Get(id);
             if (Book is null)
@@ -56,7 +56,7 @@ namespace booksProject.Services
             return true;
         }
 
-        public bool Update(int id, Book newBook)
+        public bool Update(string id, Book newBook)
         {
             if (newBook == null
                 || string.IsNullOrWhiteSpace(newBook.Name)
