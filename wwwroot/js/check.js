@@ -3,8 +3,8 @@ const checkAuthor = async () => {
     const id = document.getElementById("id");
     const name1 = document.getElementById("name");
     const loginRequest = {
-        Id: id.value,
-        Name: name1.value
+        "Id": id.value,
+        "Name": name1.value
     };
     const authorRequest = {
         ifDo: false,

@@ -77,7 +77,7 @@ public class AuthorController : ControllerBase
             return user;
         return Forbid();
     }
-    [Authorize(Policy = "Author")]
+    [Authorize(Policy = "Admin")]
     [HttpPost]
     public ActionResult Post(Author newAuthor)
     {

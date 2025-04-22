@@ -40,7 +40,8 @@ namespace booksProject.Services
             if (newT == null
             || string.IsNullOrWhiteSpace(newT.Name))
                 return "-1";
-            newT.Id = (Ts.Max(au => int.Parse(au.Id)) + 1).ToString();
+            if (typeof(T).Name == "Book")
+                newT.Id = (Ts.Max(au => int.Parse(au.Id)) + 1).ToString();
             Ts.Add(newT);
             saveToFile();
             return newT.Id;

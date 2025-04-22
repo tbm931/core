@@ -28,10 +28,10 @@ function addItem() {
     const addAdminTextbox = document.getElementById('add-isAdmin');
 
     const item = {
-        id: addIdTextbox.value,
-        name: addNameTextbox.value.trim(),
-        Phone: addPhoneTextbox.value.trim(),
-        IsAdmin: addAdminTextbox.checked
+        "id": addIdTextbox.value,
+        "name": addNameTextbox.value.trim(),
+        "phone": addPhoneTextbox.value.trim(),
+        "isAdmin": addAdminTextbox.checked
     };
 
     fetch(uri, {
@@ -58,10 +58,10 @@ function editItem() {
     const editIsAdmin = document.getElementById('edit-isAdmin');
 
     const item = {
-        id: JSON.parse(localStorage.getItem("author")).id,
-        name: editNameTextbox.value.trim(),
-        phone: editPhoneTextbox.value.trim(),
-        isAdmin: editIsAdmin.value
+        "id": JSON.parse(localStorage.getItem("author")).id,
+        "name": editNameTextbox.value.trim(),
+        "phone": editPhoneTextbox.value.trim(),
+        "isAdmin": editIsAdmin.value
     };
 
     fetch(`/Author/${item.id}`, {
