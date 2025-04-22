@@ -97,7 +97,7 @@ function displayEditForm(id) {
     document.getElementById('edit-name').value = item.name;
     document.getElementById('edit-id').value = item.id;
     document.getElementById('edit-phone').value = item.phone;
-    document.getElementById('edit-isAdmin').value = item.IsAdmin;
+    document.getElementById('edit-isAdmin').checked = item.isAdmin;
     document.getElementById('editForm').style.display = 'block';
 }
 
@@ -105,10 +105,10 @@ async function updateItem() {
     const token = localStorage.getItem("token");
     const itemId = document.getElementById('edit-id').value;
     const item = {
-        Id: itemId.toString(),
-        Name: document.getElementById('edit-name').value,
-        Phone: document.getElementById('edit-phone').value,
-        IsAdmin: document.getElementById('edit-isAdmin').checked
+        "Id": itemId.toString(),
+        "Name": document.getElementById('edit-name').value,
+        "Phone": document.getElementById('edit-phone').value,
+        "IsAdmin": document.getElementById('edit-isAdmin').checked
     };
 
     await fetch(`${uri}/${itemId}`, {

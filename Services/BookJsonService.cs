@@ -4,77 +4,81 @@ using System.Text.Json;
 
 namespace booksProject.Services
 {
-    public class BookJsonService : IBookService
+    public class BookJsonService : GenericJsonService<Book>
     {
-        public List<Book> books { get; }
-        private static string fileName = "Books.json";
-        private string filePath;
-        public BookJsonService(IHostEnvironment env)
+        public BookJsonService(IHostEnvironment env) : base(env)
         {
-            filePath = Path.Combine(env.ContentRootPath, "Data", fileName);
-
-            using (var jsonFile = File.OpenText(filePath))
-            {
-                books = JsonSerializer.Deserialize<List<Book>>(jsonFile.ReadToEnd(),
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                })!;
-            }
         }
+        // public List<Book> books { get; }
+        // private static string fileName = "Books.json";
+        // private string filePath;
+        // public BookJsonService(IHostEnvironment env)
+        // {
+        //     filePath = Path.Combine(env.ContentRootPath, "Data", fileName);
 
-        private void saveToFile()
-        {
-            File.WriteAllText(filePath, JsonSerializer.Serialize(books));
-        }
-        public List<Book> Get()
-        {
-            return books;
-        }
+        //     using (var jsonFile = File.OpenText(filePath))
+        //     {
+        //         books = JsonSerializer.Deserialize<List<Book>>(jsonFile.ReadToEnd(),
+        //         new JsonSerializerOptions
+        //         {
+        //             PropertyNameCaseInsensitive = true
+        //         })!;
+        //     }
+        // }
 
-        public Book Get(string id) => books.FirstOrDefault(b => b.Id == id)!;
+        // private void saveToFile()
+        // {
+        //     File.WriteAllText(filePath, JsonSerializer.Serialize(books));
+        // }
+        // public List<Book> Get()
+        // {
+        //     return books;
+        // }
 
-        public string Insert(Book newBook)
-        {
-            if (newBook == null
-            || string.IsNullOrWhiteSpace(newBook.Name))
-                return "-1";
-            newBook.Id = books.Max(au => au.Id) + 1;
-            books.Add(newBook);
-            saveToFile();
-            return newBook.Id;
-        }
+        // public Book Get(string id) => books.FirstOrDefault(b => b.Id == id)!;
 
-        public bool Delete(string id)
-        {
-            var Book = Get(id);
-            if (Book is null)
-                return false;
+        // public string Insert(Book newBook)
+        // {
+        //     if (newBook == null
+        //     || string.IsNullOrWhiteSpace(newBook.Name))
+        //         return "-1";
+        //     newBook.Id = books.Max(au => au.Id) + 1;
+        //     books.Add(newBook);
+        //     saveToFile();
+        //     return newBook.Id;
+        // }
 
-            books.Remove(Book);
-            saveToFile();
-            return true;
-        }
+        // public bool Delete(string id)
+        // {
+        //     var Book = Get(id);
+        //     if (Book is null)
+        //         return false;
 
-        public bool Update(string id, Book newBook)
-        {
-            if (newBook == null
-                || string.IsNullOrWhiteSpace(newBook.Name)
-                || newBook.Id != id)
-            {
-                return false;
-            }
+        //     books.Remove(Book);
+        //     saveToFile();
+        //     return true;
+        // }
 
-            var Book = books.FirstOrDefault(b => b.Id == id);
-            if (Book == null)
-                return false;
+        // public bool Update(string id, Book newBook)
+        // {
+        //     if (newBook == null
+        //         || string.IsNullOrWhiteSpace(newBook.Name)
+        //         || newBook.Id != id)
+        //     {
+        //         return false;
+        //     }
 
-            Book.Name = newBook.Name;
-            saveToFile();
+        //     var Book = books.FirstOrDefault(b => b.Id == id);
+        //     if (Book == null)
+        //         return false;
 
-            return true;
-        }
+        //     Book.Name = newBook.Name;
+        //     saveToFile();
 
-        public int Count => books.Count();
+        //     return true;
+        // }
+
+        // public int Count => books.Count();
+
     }
 }

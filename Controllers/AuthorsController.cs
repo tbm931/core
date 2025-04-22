@@ -11,9 +11,16 @@ namespace UsersController.Controllers;
 [Route("[controller]")]
 public class AuthorController : ControllerBase
 {
-    private IAuthorService authorService;
+    // private IAuthorService authorService;
 
-    public AuthorController(IAuthorService authorService)
+    // public AuthorController(IAuthorService authorService)
+    // {
+    //     this.authorService = authorService;
+    // }
+
+    private IGenericServices<Author> authorService;
+
+    public AuthorController(IGenericServices<Author> authorService)
     {
         this.authorService = authorService;
     }
@@ -99,12 +106,15 @@ public class AuthorController : ControllerBase
     [HttpPut("{id}")]
     public ActionResult Put(string id, Author newAuthor)
     {
+        System.Console.WriteLine(newAuthor.Id + " " + newAuthor.Name + " " + newAuthor.Phone + " " + newAuthor.IsAdmin);
         string token = Request.Headers["Authorization"].ToString();
         Author author = AuthorTokenService.GetAuthorFromToken(token);
         if (author.IsAdmin || author.Id == id)
         {
+            System.Console.WriteLine("here");
             if (authorService.Update(id, newAuthor))
             {
+                System.Console.WriteLine("here2");
                 return NoContent();
             }
             throw new ApplicationException("not found");
@@ -118,7 +128,8 @@ public class AuthorController : ControllerBase
     {
         if (authorService.Delete(id))
             return Ok();
-        throw new ApplicationException("not found");    }
+        throw new ApplicationException("not found");
+    }
 
     [HttpPost("GetAuthorFromT")]
     public Author? GetAuthorFromT([FromBody] AuthorRequest authorRequest)

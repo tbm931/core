@@ -10,14 +10,19 @@ namespace BooksController.Controllers;
 [Route("[controller]")]
 public class BookController : ControllerBase
 {
-    private IBookService bookService;
-    private IAuthorService authorService;
+    // private IBookService bookService;
 
-    public BookController(IBookService bookService, IAuthorService authorService)
+    // public BookController(IBookService bookService)
+    // {
+    //     this.bookService = bookService;
+    // }
+    private IGenericServices<Book> bookService;
+
+    public BookController(IGenericServices<Book> bookService)
     {
         this.bookService = bookService;
-        this.authorService = authorService;
     }
+
 
     [Authorize(Policy = "Author")]
     [HttpGet]

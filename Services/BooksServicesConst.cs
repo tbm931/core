@@ -82,11 +82,11 @@ public static class BooksUtilities
 
     public static void AddBooksJson(this IServiceCollection services)
     {
-        services.AddSingleton<IBookService, BookJsonService>();
+        services.AddSingleton<IGenericServices<Book>, BookJsonService>();
     }
 
     public static void AddAuthorJson(this IServiceCollection services)
     {
-        services.AddScoped<IAuthorService, AuthorJsonService>();
+        services.AddScoped<IGenericServices<Author>, AuthorJsonService>();
     }
 }

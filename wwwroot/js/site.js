@@ -37,8 +37,9 @@ function addItem() {
     const addAuthorNameTextbox = document.getElementById('add-authorName');
 
     const item = {
-        name: addNameTextbox.value.trim(),
-        AuthorName: addAuthorNameTextbox.value.trim()
+        "id": "5",
+        "name": addNameTextbox.value.trim(),
+        "authorName": addAuthorNameTextbox.value.trim()
     };
 
     fetch(uri, {
@@ -54,6 +55,7 @@ function addItem() {
         .then(() => {
             getItems();
             addNameTextbox.value = '';
+            addAuthorNameTextbox.value = '';
         })
         .catch(error => console.error('Unable to add item.', error));
 }
@@ -101,7 +103,7 @@ function deleteItem(id) {
 }
 
 function displayEditForm(id) {
-    const item = books.find(item => item.id === id);
+    const item = books.find(item => item.id == id);
     document.getElementById('edit-name').value = item.name;
     document.getElementById('edit-id').value = item.id;
     document.getElementById('edit-authorname').value = item.authorName;
@@ -112,9 +114,9 @@ async function updateItem() {
     const token = localStorage.getItem("token");
     const itemId = document.getElementById('edit-id').value;
     const item = {
-        Id: parseInt(itemId, 10),
-        Name: document.getElementById('edit-name').value,
-        AuthorName: document.getElementById('edit-authorname').value
+        "Id": itemId,
+        "Name": document.getElementById('edit-name').value,
+        "AuthorName": document.getElementById('edit-authorname').value
     };
 
     await fetch(`${uri}/${itemId}`, {

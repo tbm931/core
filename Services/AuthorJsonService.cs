@@ -4,78 +4,81 @@ using System.Text.Json;
 
 namespace booksProject.Services
 {
-    public class AuthorJsonService : IAuthorService
+    public class AuthorJsonService : GenericJsonService<Author>
     {
-        public List<Author> authors { get; }
-        private static string fileName = "Authors.json";
-        private string filePath;
-        public AuthorJsonService(IHostEnvironment env)
+        public AuthorJsonService(IHostEnvironment env) : base(env)
         {
-            filePath = Path.Combine(env.ContentRootPath, "Data", fileName);
-
-            using (var jsonFile = File.OpenText(filePath))
-            {
-                authors = JsonSerializer.Deserialize<List<Author>>(jsonFile.ReadToEnd(),
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                })!;
-            }
         }
+        // public List<Author> authors { get; }
+        // private static string fileName = "Authors.json";
+        // private string filePath;
+        // public AuthorJsonService(IHostEnvironment env)
+        // {
+        //     filePath = Path.Combine(env.ContentRootPath, "Data", fileName);
 
-        private void saveToFile()
-        {
-            File.WriteAllText(filePath, JsonSerializer.Serialize(authors));
-        }
+        //     using (var jsonFile = File.OpenText(filePath))
+        //     {
+        //         authors = JsonSerializer.Deserialize<List<Author>>(jsonFile.ReadToEnd(),
+        //         new JsonSerializerOptions
+        //         {
+        //             PropertyNameCaseInsensitive = true
+        //         })!;
+        //     }
+        // }
 
-        public List<Author> Get()
-        {
-            return authors;
-        }
+        // private void saveToFile()
+        // {
+        //     File.WriteAllText(filePath, JsonSerializer.Serialize(authors));
+        // }
 
-        public Author Get(string id) => authors.FirstOrDefault(a => a.Id == id)!;
+        // public List<Author> Get()
+        // {
+        //     return authors;
+        // }
 
-        public string Insert(Author newAuthor)
-        {
-            if (newAuthor == null
-            || string.IsNullOrWhiteSpace(newAuthor.Name))
-                return "null object";
-            authors.Add(newAuthor);
-            saveToFile();
-            return newAuthor.Id!;
-        }
+        // public Author Get(string id) => authors.FirstOrDefault(a => a.Id == id)!;
 
-        public bool Delete(string id)
-        {
-            var Author = Get(id);
-            if (Author is null)
-                return false;
+        // public string Insert(Author newAuthor)
+        // {
+        //     if (newAuthor == null
+        //     || string.IsNullOrWhiteSpace(newAuthor.Name))
+        //         return "null object";
+        //     authors.Add(newAuthor);
+        //     saveToFile();
+        //     return newAuthor.Id!;
+        // }
 
-            authors.Remove(Author);
-            saveToFile();
-            return true;
-        }
+        // public bool Delete(string id)
+        // {
+        //     var Author = Get(id);
+        //     if (Author is null)
+        //         return false;
 
-        public bool Update(string id, Author newAuthor)
-        {
-            if (newAuthor == null
-                || newAuthor.Id != id)
-            {
-                return false;
-            }
+        //     authors.Remove(Author);
+        //     saveToFile();
+        //     return true;
+        // }
 
-            var Author = authors.FirstOrDefault(a => a.Id == id);
-            if (Author == null)
-                return false;
+        // public bool Update(string id, Author newAuthor)
+        // {
+        //     if (newAuthor == null
+        //         || newAuthor.Id != id)
+        //     {
+        //         return false;
+        //     }
 
-            Author.Name = newAuthor.Name;
-            Author.Phone = newAuthor.Phone;
-            Author.IsAdmin = newAuthor.IsAdmin;
-            saveToFile();
+        //     var Author = authors.FirstOrDefault(a => a.Id == id);
+        //     if (Author == null)
+        //         return false;
 
-            return true;
-        }
+        //     Author.Name = newAuthor.Name;
+        //     Author.Phone = newAuthor.Phone;
+        //     Author.IsAdmin = newAuthor.IsAdmin;
+        //     saveToFile();
 
-        public int Count => authors.Count();
+        //     return true;
+        // }
+
+        // public int Count => authors.Count();
     }
 }
